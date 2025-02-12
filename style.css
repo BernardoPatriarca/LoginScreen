@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEh9k35JvFUQjVGUGodz_mFP4SjqUlmuquXuYY3c089a7oVOqhnil7_DQWphKuOfVdjKjO4IOrj7rcWXijWqh0Ur5o_3BOyYsbGjam8nGxfnFzgTIC9UbsdWA9PeLO05hoDqB8E3M5SU79zgJlWBSdJqRkvo4mj4SWnxErAC-lVc6508Cu7hPoN6sjuvN7c=s1600-rw');
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: background-position 0.1s ease-out;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+    color: #ffd5fd;
+    text-shadow: 0 0 4px rgb(173 79 137 / 80%);
+}
+
+.container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container input:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container input:focus {
+    animation: input-focus 0.5s ease-out;
+    border-color: rgb(167 40 132 / 50%);
+    outline: none;
+}
+
+.container button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: linear-gradient(200deg, #df7274, #780f85);
+    color: #ffd5fd;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(200deg, #df7274dc, #770f85d2);
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container button:active {
+    animation: button-click 0.3s ease-out;
+}
+
+.container .error {
+    color: red;
+    margin-top: 10px;
+}
+
+.logo {
+    max-width: 300px;
+}
+
+@keyframes button-click {
+    0% {
+        transform: scale(1.02);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.02);
+    }
+}
